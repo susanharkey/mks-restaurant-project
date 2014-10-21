@@ -85,7 +85,7 @@ section {
 }
 
 .hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ 
-    font-style: bold;
+    font-weight: bold;
 }
 .hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ 
     font-style: italic;
@@ -112,7 +112,7 @@ section {
     color: #221c12;
 }
 
-.menu h2, menu-section {
+.menu h2, .menu-section-item {
     /* TODO center the text of the h2 and menu-section */
     text-align: center;
 }
@@ -145,13 +145,27 @@ section {
 
 .menu-item {
     /* TODO give each menu item some bottom margin */
+    margin-bottom: 1.5em;
+    clear: both;
 }
 
-/* TODO style the menu-item-dish to be bold */
+.menu-item-dish {
+   /* TODO style the menu-item-dish to be bold */
+   font-weight: bold; 
+}
 
-/* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
+.menu-item-ingredients{
+  /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
+    font-style: italic;
+    float: left;
+    margin-right: 2em;  
+}
 
-/* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
+.menu-item-price {
+    /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
+    font-weight: bold;
+    opacity: .5;
+}
 
 
 .menu-item-name-no-description {
