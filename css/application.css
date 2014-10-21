@@ -129,7 +129,7 @@ section {
 
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
 .menu-section-item h3 a:hover,
-.menu-section-item h3 a:active {
+.active {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
     color: rgba(34, 28, 18, 1);
     border-bottom: 3px solid rgba(34, 28, 18, 1);
