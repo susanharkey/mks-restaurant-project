@@ -97,22 +97,34 @@ section {
 
 .menu {
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
+    color: #221c12;
+    background: #fffdf0;
+    padding: .5em;
 }
 
 .menu h2 {
     /* TODO make this font size larger than the Foundation default */
+    font-size: 2.75em;
 }
 
 .menu h2, .menu h3, .menu h4 {
     /* TODO give these headers a color of #221c12 */
+    color: #221c12;
 }
 
-
-/* TODO center the text of the h2 and menu-section */
+.menu h2, menu-section {
+    /* TODO center the text of the h2 and menu-section */
+    text-align: center;
+}
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
+    color: rgba(34, 28, 18, .75);
+    border: 3px solid #000;
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
+    transition: all 1s ease-in;
+   -moz-transition: all 1s ease-in;
+   -webkit-transition: all 1s ease-in;
 }
 
 
