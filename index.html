@@ -8,6 +8,7 @@
 
         <!-- Google Fonts -->
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
         <!-- Foundation CSS -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -425,9 +426,20 @@
 
         <!-- Our JS -->
         <!-- TODO link to our script.js file -->
-
+        <script src="js/script.js"></script>
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
+        <script src="js/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#slides').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
+        </script>
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
