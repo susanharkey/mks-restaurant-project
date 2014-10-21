@@ -52,28 +52,31 @@
         </header>
 
         <!-- Address, map, hours -->
-        <section class="address row">
-            <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-                <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location columns small-12 large-4">
-                    <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
-                    111 east cesar chavez
-                    austin, texas 78701
-                    512.478.2291
-                </div>
+        <section class="address">
+            <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? Because we want each section to be full width -->
+                <div class="row">
+                    <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
+                    <div class="location columns small-12 large-4">
+                        <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
+                        at the Radisson Hotel
+                        111 east cesar chavez
+                        austin, texas 78701
+                        512.478.2291
+                    </div>
 
-                <div class="map columns small-12 large-4">
-                    <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
-                </div>
+                    <div class="map columns small-12 large-4">
+                        <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    </div>
 
-                <div class="hours columns small-12 large-4">
-                    <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
-                </div>               
+                    <div class="hours columns small-12 large-4">
+                        <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
+                        breakfast: 6:30–11am
+                        lunch: 11am–3pm
+                        limited menu: 3–5pm
+                        dinner: 5–10pm
+                    </div>   
+                </div>
+                            
         </section>
 
         <!-- Menu -->
