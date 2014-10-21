@@ -10,8 +10,8 @@
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
 
         <!-- Foundation CSS -->
-        <!-- TODO link to foundation's normalize.css -->
-        <!-- TODO link to foundation's foundation.min.css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
 
         <!-- If you are using Foundation Sass, keep the head from their file. -->
 
@@ -35,16 +35,27 @@
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
 
-            <div><img src="images/chavez-1.jpg" alt=""></div>
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
+            <div id="slides">
+                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <div><img src="images/chavez-2.jpg" alt=""></div>
+                <div><img src="images/chavez-3.jpg" alt=""></div>
+                <div><img src="images/chavez-4.jpg" alt=""></div>
+                <div><img src="images/chavez-5.jpg" alt=""></div>
+                <div><img src="images/chavez-6.jpg" alt=""></div>
+                <div><img src="images/chavez-7.jpg" alt=""></div>
+                <div><img src="images/chavez-8.jpg" alt=""></div>
+                <div><img src="images/chavez-9.jpg" alt=""></div>
+                <div><img src="images/chavez-10.jpg" alt=""></div>            
+            </div>
+
         </header>
 
         <!-- Address, map, hours -->
-        <section class="address">
+        <section class="address row">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
+                <div class="location columns small-12 large-4">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
                     at the Radisson Hotel
                     111 east cesar chavez
@@ -52,18 +63,17 @@
                     512.478.2291
                 </div>
 
-                <div class="map">
+                <div class="map columns small-12 large-4">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
                 </div>
 
-                <div class="hours">
+                <div class="hours columns small-12 large-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
                     breakfast: 6:30–11am
                     lunch: 11am–3pm
                     limited menu: 3–5pm
                     dinner: 5–10pm
-                </div>
-
+                </div>               
         </section>
 
         <!-- Menu -->
