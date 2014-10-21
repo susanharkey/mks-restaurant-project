@@ -5,16 +5,18 @@
 body {
     margin: 0;
     /* TODO use the Google Font 'Bitter' */
-    font-family: 'Bitter', serif;;
+    font-family: 'Bitter', serif;
     font-size: 100%;
 }
 
 div, h1, h2, h3, h4, h5, h6, p, ul, ol, a {
     /* TODO because we are using Foundation, we have to override Foundation's default font family. Use the Google Font 'Bitter' here. */
+    font-family: 'Bitter', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     /* TODO make the font color of all our headers #fffdf0 */
+    color: #fffdf0;
 }
 
 /* ---------------------------------------------- */
@@ -25,12 +27,16 @@ header {}
 
 header h1 {
     /* TODO make the font size larger than Foundation's default; I uesd 4.5em */
+    font-size: 4.5em;
     /* TODO add a text-shadow on the h1 using rgba(34, 28, 18,.75) */
+    text-shadow: 1px 1px rgba(34, 28, 18,.75);
 }
 
 header .tagline h4 {
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
+    font-style: italic;
     /* TODO add the same text-shadow */
+    text-shadow: 1px 1px rgba(34, 28, 18,.75);
 }
 
 header .tagline {
