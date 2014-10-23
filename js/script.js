@@ -85,9 +85,9 @@ $(function() {
           html += '<div class="menu-item">';
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
-          html += '<div class="menu-item-dish">' + json[i].content[j]. + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j]. + '</p>';
-          html += '<div class="menu-item-price">' + json[i].content[j]. + '</div>';
+          html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
+          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredient + '</p>';
+          html += '<div class="menu-item-price">' + json[i].content[j].price + '</div>';
           html += '</div>';
         }
 
