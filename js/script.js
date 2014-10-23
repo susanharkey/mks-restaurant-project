@@ -21,15 +21,14 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var id = $( this.id );
-      alert
+      var id = $(this).attr('id');
 
       // Remove the class 'is-active' from all menu item headings
-      $( '.menu-section' ).removeClass( '.is-active' );
+      $( '.menu-section-item' ).removeClass( 'is-active' );
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '.is-active' );
+      $( this ).addClass( 'is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
@@ -87,7 +86,12 @@ $(function() {
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
           html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredient + '</p>';
+          // if ingredients exists
+          //   do this:
+          if(json[i].content[j].hasOwnProperty('ingredients')){
+            html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
+          }
+
           html += '<div class="menu-item-price">' + json[i].content[j].price + '</div>';
           html += '</div>';
         }
